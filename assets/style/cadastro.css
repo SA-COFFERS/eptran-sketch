@@ -48,7 +48,7 @@ form{
     gap: 30px;
     margin: 20px;
 
-    input{
+    input, select{
         width: 80%;
         margin: auto;
         height: 3em;
