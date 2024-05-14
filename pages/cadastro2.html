@@ -5,21 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EPTRAN - Prefeitura de Joinville</title>
-    <link rel="stylesheet" href="../assets/style/cadastro.css">
+    <link rel="stylesheet" href="../assets/style/cadastro2.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <header>
-        <img src="../assets/img/logo-prefeitura-horizontal.png" alt="">
-    </header>
 
     <main>
         <form>
             <p class="main-text">Complete seu cadastro</p>
 
-            <p class="form-text"> Nome completo:</p>
-            <input type="text" id="name">
+            
+            <input type="text" id="name" placeholder="Nome completo">
 
             <p class="form-text">Data de nascimento:</p>
             <input type="date" id="birthday">
@@ -42,15 +39,16 @@
                 </section>
             </div>
 
-            <p class="form-text">Sua escolaridade: </p>
-            <select id="school">
-                <option value="lvl1">Fundamental 1</option>
-                <option value="lvl2">Fundamental 2</option>
-                <option value="lvl3">Ensino Médio</option>
+            
+            <select id="school" >
+                <option value="lvl1">Escolaridade:</option>
+                <option value="lvl2">Fundamental 1</option>
+                <option value="lvl3">Fundamental 2</option>
+                <option value="lvl4">Ensino Médio</option>
             </select>
             
 
-            <button>Finalizar</button>
+            <button><a href="#" class="finish">Finalizar</a></button>
         </form>
     </main>
 </body>

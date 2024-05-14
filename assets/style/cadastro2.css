@@ -82,9 +82,5 @@ form{
             justify-content: space-around;
         }
     }
-    p{
-        color: #367BBC;
-        text-align: center;
-        padding-bottom: 5%;
-    }
+   
 }

@@ -1,0 +1,35 @@
+footer{
+    background-color: #05466C;
+
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    
+
+}
+
+.logo-jlle{
+    height: 113px;
+}
+
+.phone-number, .email, .address{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+
+.address{
+    color: white;
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+    max-width: 300px;
+}
