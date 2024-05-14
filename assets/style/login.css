@@ -82,7 +82,20 @@ form{
             justify-content: space-around;
         }
     }
-    p{
+
+    .forget-password{
+        margin-left: 10%;
+        color: #706c6c;
+
+    }
+
+    .forget-password:hover, .login-text:hover, .next:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+
+    .login-text{
         color: #367BBC;
         text-align: center;
         padding-bottom: 5%;
