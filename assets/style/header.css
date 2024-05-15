@@ -14,6 +14,28 @@ header img{
     height: 30px;
 }
 
-.bx-menu{
+.bx{
     scale: 2;
+}
+
+.hide{
+    display: none;
+}
+
+.open-menu{
+    position: fixed;
+    border-top: 2px solid black;
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    .open-menu-options{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
 }
