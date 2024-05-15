@@ -13,8 +13,14 @@ main{
     border-radius: 15px;
     background-color: #fff;
     border:1px solid black;
+    
 
     
+}
+
+.color-button{
+    background-color: #05466C;
+
 }
 
 form{
@@ -44,7 +50,6 @@ form{
     }
 
     button{
-        background-color: #0065FF;
         color: white;
         padding: 10px;
         border-radius: 10px;
@@ -86,5 +91,37 @@ form{
         color: #367BBC;
         text-align: center;
         padding-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    main {
+        margin: 30px;
+    }
+    
+    .main-text {
+        font-size: 1.5em;
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    button.color-button {
+        width: auto; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    main {
+        margin: 30px;
+    }
+
+    input, select {
+        width: 100%;
+    }
+    button.color-button {
+        width: auto; 
     }
 }
