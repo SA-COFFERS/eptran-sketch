@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="assets/style/footer.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-    <header>
-            <i class='bx bx-menu'></i>
+<body onresize="changeResolution()">
+    <header id="regular-header">
+            <i class='bx bx-menu menu-button' style="cursor: pointer;" onclick="openMenu()"></i>
             <img src="assets/img/logo-prefeitura-horizontal.png" alt="">
     </header>
 
     <div class="open-header">
-        <header>
-            <i class='bx bx-left-arrow-alt'></i>
+        <header id="open-header" class="hide">
+            <i class='bx bx-left-arrow-alt menu-button'onclick="closeMenu()" style="cursor: pointer;" ></i>
             <img src="assets/img/logo-prefeitura-horizontal.png" alt="">
         </header>
         <div class="open-menu">
@@ -48,9 +48,9 @@
         </div>
     </div>
 
-    <div class="content">
-        <img src="assets/img/paralelograms.png" id="paralelograms">
+    <div class="container">
         <main>
+        <img src="assets/img/paralelograms.png" id="paralelograms">
             <div class="texts">
                 <section>
                     <h2><span id="underline">Nós</span> somos o <strong>Trânsito</strong></h2>
@@ -93,4 +93,5 @@
     </div>
 
 </body>
+<script src="js/openMenu.js"></script>
 </html>
