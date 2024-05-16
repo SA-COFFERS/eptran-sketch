@@ -17,6 +17,7 @@ main{
 
 .color-button{
     background-color: #05466C;
+    border: none;
 }
 
 form{
@@ -48,7 +49,7 @@ form{
     button{
         color: white;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 2px;
         width: 150px;
         margin: 40px auto;
 
