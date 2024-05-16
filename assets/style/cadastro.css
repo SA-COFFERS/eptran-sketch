@@ -13,8 +13,14 @@ main{
     border-radius: 15px;
     background-color: #fff;
     border:1px solid black;
+    
 
     
+}
+
+.color-button{
+    background-color: #05466C;
+
 }
 
 form{
@@ -44,12 +50,11 @@ form{
     }
 
     button{
-        background-color: #0065FF;
         color: white;
         padding: 10px;
         border-radius: 10px;
         width: 150px;
-        margin: 40px auto;
+        margin: 20px auto;
 
         a{
             color: white;
@@ -86,5 +91,41 @@ form{
         color: #367BBC;
         text-align: center;
         padding-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        margin: 25px;
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    button.color-button {
+        width: auto; 
+    }
+
+    .main-text{
+        font-size: 1.2em !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    main {
+        margin: 25px;
+    }
+
+    input, select {
+        width: 100%;
+    }
+    button.color-button {
+        width: auto; 
+    }
+
+    .main-text{
+        font-size: 1.2em !important;
     }
 }
