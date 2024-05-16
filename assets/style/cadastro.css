@@ -54,7 +54,7 @@ form{
         padding: 10px;
         border-radius: 10px;
         width: 150px;
-        margin: 40px auto;
+        margin: 20px auto;
 
         a{
             color: white;
@@ -94,13 +94,9 @@ form{
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
     main {
-        margin: 30px;
-    }
-    
-    .main-text {
-        font-size: 1.5em;
+        margin: 25px;
     }
 
     input, select {
@@ -109,13 +105,17 @@ form{
 
     button.color-button {
         width: auto; 
+    }
+
+    .main-text{
+        font-size: 1.2em !important;
     }
 }
 
 @media only screen and (max-width: 600px) {
     
     main {
-        margin: 30px;
+        margin: 25px;
     }
 
     input, select {
@@ -123,5 +123,9 @@ form{
     }
     button.color-button {
         width: auto; 
+    }
+
+    .main-text{
+        font-size: 1.2em !important;
     }
 }

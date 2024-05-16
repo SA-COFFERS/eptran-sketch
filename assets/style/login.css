@@ -49,7 +49,7 @@ form{
         padding: 10px;
         border-radius: 10px;
         width: 150px;
-        margin: 40px auto;
+        margin: 20px auto;
         border: none;
 
         a{
@@ -108,9 +108,23 @@ form{
     main {
         margin: 30px;
     }
+
+    input, select {
+        width: 100%;
+    }
+
+    button.color-button {
+        width: auto; 
+    }
     
-    .main-text {
-        font-size: 1.5em;
+    .main-text{
+        font-size: 1.2em !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        margin: 25px;
     }
 
     input, select {
@@ -119,5 +133,9 @@ form{
 
     button.color-button {
         width: auto; 
+    }
+
+    .main-text{
+        font-size: 1.2em !important;
     }
 }
