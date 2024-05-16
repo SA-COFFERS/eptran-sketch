@@ -6,53 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EPTRAN - Prefeitura de Joinville</title>
     <link rel="stylesheet" href="../assets/style/cadastro2.css">
+    <link rel="stylesheet" href="../assets/style/footer.css">
+    <link rel="stylesheet" href="../assets/style/header.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 
-    <main>
-        <form>
-            <p class="main-text">Complete seu cadastro</p>
+    <header id="regular-header">
+        <i class='bx bx-menu menu-button' style="cursor: pointer;" onclick="openMenu()"></i>
+        <img src="../assets/img/logo-prefeitura-horizontal.png" alt="">
+</header>
 
-            
-            <input type="text" id="name" placeholder="  Nome completo">
+<div class="open-header">
+    <header id="open-header" class="hide">
+        <i class='bx bx-left-arrow-alt menu-button'onclick="closeMenu()" style="cursor: pointer;" ></i>
+        <img src="../assets/img/logo-prefeitura-horizontal.png" alt="">
+    </header>
+    <div class="open-menu">
+        <div class="top-open-menu">
+            <section class="open-menu-options">
+                <i class='bx bx-home-alt'></i>
+                <p>Início</p>
+            </section>
+            <section class="open-menu-options">
+                <i class='bx bx-info-circle' ></i>
+                <p>Sobre nós</p>
+            </section>
+            <section class="open-menu-options">
+                <i class='bx bx-joystick' ></i>
+                <p>Jogos</p>
+            </section>
+            <section class="open-menu-options">
+                <i class='bx bx-news' ></i>
+                <p>Notícias</p>
+            </section>
+        </div>
 
-            <div class="birth">
-                <p class="form-text">Data de nascimento:</p>
-                <input type="date" id="birthday">
+        <section class="open-menu-options">
+                <i class='bx bx-user-circle' ></i>
+                <p>Perfil</p>
+        </section>
+
+    </div>
+</div>
+
+    <div class="container">
+        <main>
+            <form>
+                <p class="main-text">Complete seu cadastro</p>
+        
+                <input type="text" id="name" placeholder="  Nome completo">
+                <div class="birth">
+                    <p class="form-text">Data de nascimento:</p>
+                    <input type="date" id="birthday">
+                </div>
+                <div class="sex-options-div">
+                    <p class="form-text">Informe seu sexo:</p>
+                    <section class="sex-options-section">
+                        <div class="sex-option">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Masculino</label>
+                        </div>
+                        <div class="sex-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Feminino</label>
+                        </div>
+                        <div class="sex-option">
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Outro</label>
+                        </div>
+                    </section>
+                </div>
+        
+                <select id="school" >
+                    <option value="lvl1">Escolaridade:</option>
+                    <option value="lvl2">Fundamental 1</option>
+                    <option value="lvl3">Fundamental 2</option>
+                    <option value="lvl4">Ensino Médio</option>
+                </select>
+        
+                <button class="color-button"><a href="#" class="finish">Finalizar</a></button>
+            </form>
+        </main>
+
+        <footer>
+            <div class="logos">
+                <img src="../assets/img/logo-prefeitura-vertical-branco.png" alt="" class="logo-jlle">
+                <img src="../assets/img/logo-eptran.png" alt="">
             </div>
-
-            <div class="sex-options-div">
-                <p class="form-text">Informe seu sexo:</p>
-                <section class="sex-options-section">
-                    <div class="sex-option">
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Masculino</label>
-                    </div>
-                    <div class="sex-option">
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Feminino</label>
-                    </div>
-                    <div class="sex-option">
-                        <input type="radio" id="other" name="gender" value="other">
-                        <label for="other">Outro</label>
-                    </div>
-                </section>
+            <div class="phone-number">
+                <i class='bx bx-phone'></i>
+                <p>(47) 3431-1541</p>
             </div>
-
-            
-            <select id="school" >
-                <option value="lvl1">Escolaridade:</option>
-                <option value="lvl2">Fundamental 1</option>
-                <option value="lvl3">Fundamental 2</option>
-                <option value="lvl4">Ensino Médio</option>
-            </select>
-            
-
-            <button class="color-button"><a href="#" class="finish">Finalizar</a></button>
-        </form>
-    </main>
+            <div class="email">
+                <i class='bx bx-envelope'></i>
+                <p>eptran@joinville.sc.gov.br</p>
+            </div>
+            <p class="address">R. Caçador, 112 - Atiradores, Joinville - SC, 89203-610</p>
+        </footer>
+    </div>
 </body>
-
+<script src="../js/openMenu.js"></script>
 </html>

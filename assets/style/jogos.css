@@ -21,6 +21,7 @@ h2{
 }
 
 main{
+    padding-top: 100px;
     margin: 20px auto;
     width: 90%;
 }

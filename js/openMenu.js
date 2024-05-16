@@ -23,3 +23,5 @@ const changeResolution = () => {
     container.classList.remove('dark-mode');
     menu.style.left = '-70%';
 }
+
+window.addEventListener("resize", changeResolution)
