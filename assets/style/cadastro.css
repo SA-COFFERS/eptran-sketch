@@ -6,6 +6,9 @@
     font-family: "Poppins", sans-serif;
 }
 
+.container{
+    padding-top: 100px;
+}
 
 main{
     margin: 80px auto;
