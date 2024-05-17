@@ -7,7 +7,6 @@
     <title>EPTRAN - Prefeitura de Joinville</title>
     <link rel="stylesheet" href="../assets/style/cadastro2.css">
     <link rel="stylesheet" href="../assets/style/footer.css">
-    <link rel="stylesheet" href="../assets/style/header.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../assets/style/header.css">
 
@@ -58,30 +57,30 @@
             <form>
                 <p class="main-text">Complete seu cadastro</p>
         
-                <input type="text" id="name" placeholder="  Nome completo">
+                <input class="dark-input" type="text" id="name" placeholder="  Nome completo">
                 <div class="birth">
                     <p class="form-text">Data de nascimento:</p>
-                    <input type="date" id="birthday">
+                    <input class="dark-input" type="date" id="birthday">
                 </div>
                 <div class="sex-options-div">
                     <p class="form-text">Informe seu sexo:</p>
                     <section class="sex-options-section">
                         <div class="sex-option">
-                            <input type="radio" id="male" name="gender" value="male">
+                            <input class="dark-input" type="radio" id="male" name="gender" value="male">
                             <label for="male">Masculino</label>
                         </div>
                         <div class="sex-option">
-                            <input type="radio" id="female" name="gender" value="female">
+                            <input class="dark-input" type="radio" id="female" name="gender" value="female">
                             <label for="female">Feminino</label>
                         </div>
                         <div class="sex-option">
-                            <input type="radio" id="other" name="gender" value="other">
+                            <input class="dark-input" type="radio" id="other" name="gender" value="other">
                             <label for="other">Outro</label>
                         </div>
                     </section>
                 </div>
         
-                <select id="school" >
+                <select id="school" class="dark-input">
                     <option value="lvl1">Escolaridade:</option>
                     <option value="lvl2">Fundamental 1</option>
                     <option value="lvl3">Fundamental 2</option>
