@@ -4,9 +4,11 @@
 }
 
 .dark-mode {
+    display: block;
     filter: grayscale(0.5);
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.35) ;
 }
+
 
 header{
     top: 0;
@@ -17,7 +19,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 65%;
-    z-index: 12;
+    z-index: 2;
     padding: 20px 0;
 }
 
@@ -67,5 +69,17 @@ header img{
 }
 
 .menu-button{
-    z-index: 10;
+    z-index: 2;
+}
+
+a{
+    z-index: 2;
+}
+
+button{
+    z-index: 2;
+}
+
+input{
+    z-index: 400;
 }
