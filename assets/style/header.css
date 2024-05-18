@@ -5,8 +5,8 @@
 
 .dark-mode {
     display: block;
-    filter: grayscale(0.5);
-    background-color: rgba(0, 0, 0, 0.35) ;
+    filter: grayscale(0.7);
+    background-color: rgba(0, 0, 0, 0.20) ;
 }
 
 header{
@@ -32,7 +32,7 @@ header img{
 
 .open-menu{
     position: fixed;
-    height: 93%;
+    height: 100%;
     width: 70%;
     background-color: #fff;
     left: -70%;
@@ -42,6 +42,8 @@ header img{
     justify-content: space-between;
     transition: all .2s ease-in-out;
 
+    
+
     .open-menu-options{
         padding: 20px;
         display: flex;
@@ -49,6 +51,11 @@ header img{
         gap: 20px;
     }
 
+}
+
+.open-menu a{
+    color: black;
+    text-decoration: none;
 }
 
 .open-header{
@@ -81,4 +88,8 @@ button{
 
 input, select{
     z-index: 2;
+}
+
+.user{
+    margin-bottom: 70px;
 }
