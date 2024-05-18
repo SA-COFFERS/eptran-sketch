@@ -41,8 +41,7 @@ header img{
     flex-direction: column;
     justify-content: space-between;
     transition: all .2s ease-in-out;
-
-    
+    overflow-x: hidden;
 
     .open-menu-options{
         padding: 20px;
