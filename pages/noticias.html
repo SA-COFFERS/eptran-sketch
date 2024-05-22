@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - EPTRAN</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/style/header.css">
+    <link rel="stylesheet" href="../assets/style/footer.css">
+    <link rel="stylesheet" href="../assets/style/carousel.css">
+    <link rel="stylesheet" href="../assets/style/noticias.css">
+</head>
+
+<body>
+<header id="regular-header">
+        <i class='bx bx-menu menu-button' style="cursor: pointer;" onclick="openMenu()"></i>
+        <img src="../assets/img/logo-prefeitura-horizontal.png" alt="">
+</header>
+
+<div class="open-header">
+    <header id="open-header" class="hide">
+        <i class='bx bx-left-arrow-alt menu-button'onclick="closeMenu()" style="cursor: pointer;" ></i>
+        <img src="../assets/img/logo-prefeitura-horizontal.png" alt="">
+    </header>
+    <div class="open-menu">
+        <div class="top-open-menu">
+            <a href="../index.html">
+                <section class="open-menu-options">
+                    <i class='bx bx-home-alt'></i>
+                    <p>Início</p>
+                </section>
+            </a>
+            <section class="open-menu-options">
+                <i class='bx bx-info-circle' ></i>
+                <p>Sobre nós</p>
+            </section>
+            <a href="jogos.html">
+                <section class="open-menu-options">
+                    <i class='bx bx-joystick' ></i>
+                    <p>Jogos</p>
+                </section>
+            </a>
+            <section class="open-menu-options">
+                <i class='bx bx-news' ></i>
+                <p>Notícias</p>
+            </section>
+        </div>
+
+        <a href="login.html">
+            <section class="open-menu-options user">
+                    <i class='bx bx-user-circle' ></i>
+                    <p>Perfil</p>
+            </section>
+        </a>
+
+    </div>
+</div>
+
+
+
+    <div class="container">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="../assets/img/carousel-1.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="../assets/img/carousel-1.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="../assets/img/carousel-1.png" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        <main>
+            <h1>Confira as últimas notícias</h1>
+
+                <section class="news-container">
+                    <div class="news-content">
+                        <img src="../assets/img/games.png" alt="">
+                        <p class="news-text">Lançamos o novo jogo lorem ipsum de consientização do trânsito</p>
+                        <span class="news-date"><i class='bx bx-time-five'></i><p>09/11/2024 12:45</p></span>
+                    </div>
+                </section>
+
+                <section class="news-container">
+                    <div class="news-content">
+                        <img src="../assets/img/games.png" alt="">
+                        <p class="news-text">Lançamos o novo jogo lorem ipsum de consientização do trânsito</p>
+                        <span class="news-date"><i class='bx bx-time-five'></i><p>09/11/2024 12:45</p></span>
+                    </div>
+                </section>
+
+                <section class="news-container">
+                    <div class="news-content">
+                        <img src="../assets/img/games.png" alt="">
+                        <p class="news-text">Lançamos o novo jogo lorem ipsum de consientização do trânsito</p>
+                        <span class="news-date"><i class='bx bx-time-five'></i><p>09/11/2024 12:45</p></span>
+                    </div>
+                </section>
+        </main>
+        
+        <footer>
+            <div class="logos">
+                <img src="../assets/img/logo-prefeitura-vertical-branco.png" alt="" class="logo-jlle">
+                <img src="../assets/img/logo-eptran.png" alt="">
+            </div>
+            <div class="phone-number">
+                <i class='bx bx-phone'></i>
+                <p>(47) 3431-1541</p>
+            </div>
+            <div class="email">
+                <i class='bx bx-envelope'></i>
+                <p>eptran@joinville.sc.gov.br</p>
+            </div>
+            <p class="address">R. Caçador, 112 - Atiradores, Joinville - SC, 89203-610</p>
+        </footer>
+    </div>
+
+</body>
+<script src="../js/openMenu.js"></script>
+<script src="../js/carousel.js"></script>
+</html>
