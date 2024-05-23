@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/style/footer.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
+<body onscroll="closeMenu()">
     <header id="regular-header">
             <i class='bx bx-menu menu-button' style="cursor: pointer;" onclick="openMenu()"></i>
             <img src="assets/img/logo-prefeitura-horizontal.png" alt="">
@@ -22,7 +22,7 @@
         </header>
         <div class="open-menu">
             <div class="top-open-menu">
-                <a href="/index.html">
+                <a href="/">
                     <section class="open-menu-options">
                         <i class='bx bx-home-alt'></i>
                         <p>Início</p>
@@ -54,6 +54,7 @@
                 </a>
     
         </div>
+        <div class="dark-side hide"  onclick="closeMenu()"></div>
     </div>
 
     <div class="container">
