@@ -1,11 +1,13 @@
 const menu = document.querySelector(".open-menu");
 const regularHeader = document.querySelector("#regular-header");
 const openHeader = document.querySelector("#open-header");
-const container = document.querySelector(".container")
+const container = document.querySelector(".container");
+const darkSide = document.querySelector(".dark-side")
 
-const input = document.querySelectorAll(".dark-input")
+const input = document.querySelectorAll(".dark-input");
 
 const openMenu = () => {
+    darkSide.classList.remove('hide');
     menu.style.left = '0';
     regularHeader.classList.add('hide');
     openHeader.classList.remove('hide');
@@ -16,6 +18,7 @@ const openMenu = () => {
 }
 
 const closeMenu = () => {
+    darkSide.classList.add('hide');
     openHeader.classList.add('hide');
     regularHeader.classList.remove('hide');
     input.forEach(e => {
@@ -35,4 +38,4 @@ const changeResolution = () => {
     menu.style.left = '-70%';
 }
 
-window.addEventListener("resize", changeResolution)
+window.addEventListener("resize", changeResolution);

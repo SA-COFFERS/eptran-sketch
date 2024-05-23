@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
-h1{
+.news-title{
     margin: 40px;
     font-size: 1.7em;
     font-weight: 500;

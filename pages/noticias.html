@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notícias - EPTRAN</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../assets/style/header.css">
     <link rel="stylesheet" href="../assets/style/footer.css">
     <link rel="stylesheet" href="../assets/style/carousel.css">
     <link rel="stylesheet" href="../assets/style/noticias.css">
+    <link rel="stylesheet" href="../assets/style/header.css">
 </head>
 
-<body>
+<body onscroll="closeMenu()">
 <header id="regular-header">
         <i class='bx bx-menu menu-button' style="cursor: pointer;" onclick="openMenu()"></i>
         <img src="../assets/img/logo-prefeitura-horizontal.png" alt="">
@@ -24,7 +24,7 @@
     </header>
     <div class="open-menu">
         <div class="top-open-menu">
-            <a href="../index.html">
+            <a href="/">
                 <section class="open-menu-options">
                     <i class='bx bx-home-alt'></i>
                     <p>Início</p>
@@ -40,10 +40,12 @@
                     <p>Jogos</p>
                 </section>
             </a>
-            <section class="open-menu-options">
-                <i class='bx bx-news' ></i>
-                <p>Notícias</p>
-            </section>
+            <a href="noticias.html">
+                <section class="open-menu-options">
+                    <i class='bx bx-news' ></i>
+                    <p>Notícias</p>
+                </section>
+            </a>
         </div>
 
         <a href="login.html">
@@ -52,8 +54,8 @@
                     <p>Perfil</p>
             </section>
         </a>
-
     </div>
+    <div class="dark-side hide"  onclick="closeMenu()"></div>
 </div>
 
 
@@ -88,7 +90,7 @@
               <span class="dot" onclick="currentSlide(3)"></span> 
             </div>
         <main>
-            <h1>Confira as últimas notícias</h1>
+            <h1 class="news-title">Confira as últimas notícias</h1>
 
                 <section class="news-container">
                     <div class="news-content">
@@ -133,6 +135,6 @@
     </div>
 
 </body>
-<script src="../js/openMenu.js"></script>
 <script src="../js/carousel.js"></script>
+<script src="../js/openMenu.js"></script>
 </html>
