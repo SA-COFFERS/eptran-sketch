@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - EPTRAN</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/style/header.css">
+    <link rel="stylesheet" href="../assets/style/perfil.css">
+</head>
+
+<body onscroll="closeMenu()">
+    <header id="regular-header">
+            <i class='bx bx-menu menu-button' style="cursor: pointer;" onclick="openMenu()"></i>
+            <img src="../assets/img/logo-prefeitura-horizontal.png" alt="">
+    </header>
+    
+    <div class="open-header">
+        <header id="open-header" class="hide">
+            <i class='bx bx-left-arrow-alt menu-button'onclick="closeMenu()" style="cursor: pointer;" ></i>
+            <img src="../assets/img/logo-prefeitura-horizontal.png" alt="">
+        </header>
+        <div class="open-menu">
+            <div class="top-open-menu">
+                <a href="/">
+                    <section class="open-menu-options">
+                        <i class='bx bx-home-alt'></i>
+                        <p>Início</p>
+                    </section>
+                </a>
+                <section class="open-menu-options">
+                    <i class='bx bx-info-circle' ></i>
+                    <p>Sobre nós</p>
+                </section>
+                <a href="jogos.html">
+                    <section class="open-menu-options">
+                        <i class='bx bx-joystick' ></i>
+                        <p>Jogos</p>
+                    </section>
+                </a>
+                <a href="noticias.html">
+                    <section class="open-menu-options">
+                        <i class='bx bx-news' ></i>
+                        <p>Notícias</p>
+                    </section>
+                </a>
+            </div>
+    
+            <a href="login.html">
+                <section class="open-menu-options user">
+                        <i class='bx bx-user-circle' ></i>
+                        <p>Perfil</p>
+                </section>
+            </a>
+        </div>
+        <div class="dark-side hide"  onclick="closeMenu()"></div>
+    </div>
+    
+    
+    
+        <div class="container"> 
+            <main>
+                <section class="profile">
+                    <div class="profile-picture">
+                        <img src="../assets/img/default-user.png" alt="">
+                        <i class='bx bxs-camera'></i>
+                    </div>
+                    <div class="name-n-email">
+                        <h2>Fulano de Tal</h2>
+                        <p>taldefulano@gmail.com</p>
+                    </div>
+                </section>
+            </main>            
+        </div>
+    
+    </body>
+    <script src="../js/openMenu.js"></script>
+    </html>
