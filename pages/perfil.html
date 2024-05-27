@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EPTRAN - Prefeitura de Joinville</title>
-    <link rel="stylesheet" href="../assets/style/login.css">
-    <link rel="stylesheet" href="../assets/style/footer.css">
+    <title>Perfil - EPTRAN</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../assets/style/header.css">
-
+    <link rel="stylesheet" href="../assets/style/perfil.css">
 </head>
+
 <body onscroll="closeMenu()">
     <header id="regular-header">
             <i class='bx bx-menu menu-button' style="cursor: pointer;" onclick="openMenu()"></i>
@@ -56,48 +55,24 @@
         </div>
         <div class="dark-side hide"  onclick="closeMenu()"></div>
     </div>
-<div class="container">
     
-        <main>
-            <form>
-                <p class="main-text">Login</p>
-                    <input type="email" id="email" class="email-input dark-input" placeholder="  E-mail:">
     
-                    <input type="password" id="password"
-                    placeholder="  Senha:" class="dark-input">
-                    <a class="forget-password">Esqueci minha senha</a>
     
-                    <button>
-                        <a href="../index.html" class="next">Seguinte
-
-                        </a>
-                    </button>
+        <div class="container"> 
+            <main>
+                <section class="profile">
+                    <div class="profile-picture">
+                        <img src="../assets/img/default-user.png" alt="">
+                        <i class='bx bxs-camera'></i>
+                    </div>
+                    <div class="name-n-email">
+                        <h2>Fulano de Tal</h2>
+                        <p>taldefulano@gmail.com</p>
+                    </div>
+                </section>
+            </main>            
+        </div>
     
-                    <a href="cadastro1.html">
-                    <p class="login-text">
-                            Não possui uma conta?/cadastro
-                        </p>
-                    </a>
-
-            </form>
-        </main>
-    
-        <footer>
-            <div class="logos">
-                <img src="../assets/img/logo-prefeitura-vertical-branco.png" alt="" class="logo-jlle">
-                <img src="../assets/img/logo-eptran.png" alt="">
-            </div>
-            <div class="phone-number">
-                <i class='bx bx-phone'></i>
-                <p>(47) 3431-1541</p>
-            </div>
-            <div class="email">
-                <i class='bx bx-envelope'></i>
-                <p>eptran@joinville.sc.gov.br</p>
-            </div>
-            <p class="address">R. Caçador, 112 - Atiradores, Joinville - SC, 89203-610</p>
-        </footer>
-</div>
-</body>
-<script src="../js/openMenu.js"></script>
-</html>
+    </body>
+    <script src="../js/openMenu.js"></script>
+    </html>
