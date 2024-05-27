@@ -26,7 +26,79 @@ input, select{
     border-radius: 5px;
 }
 
-.sex-options-section{
+label{
+    font-size: 19px;
+    margin: 9%;
+}
+
+.sex-option{
     display: flex;
 
 }
+
+.sex-options-section{
+    display: flex;
+    margin: auto;
+    gap: 30px;
+}
+
+a{
+    display: flex;
+    text-decoration: underline;
+    color: #05466C;
+    text-align: center;
+
+}
+
+.forget-password{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+    width: 65%;
+}
+
+.save-button{
+    background-color: #05466C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.descart-button{
+    background-color: white;
+    color: black;
+    border: solid black 1px; 
+    padding: 10px 20px; 
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.delete-account{
+    margin-top: 5%;
+    margin: auto;
+    color: #B94E4E;
+}
+
+.bxs-lock-alt, .bxs-trash{
+    scale: 1.2 !important;
+    text-decoration: none;
+    
+}
+
+h2, h3{
+    font-weight: normal;
+}
+
