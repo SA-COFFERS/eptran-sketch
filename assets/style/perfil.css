@@ -8,22 +8,75 @@
 
 main{
     padding-top: 100px;
+
+    section{
+        padding: 30px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
 }
 
 .container{
     height: 100vh;
 }
 
-.profile-picture{
-    img{
-        position: relative;
-        width: 60px;
+.profile{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.name-n-email{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    h2{
+        font-weight: 400;
+    }
+
+    p{
+        font-size: 0.9em;
+        font-weight: 300;
     }
 }
 
+.profile-picture{
+    position: relative;
 
-.bxs-camera {
+    .profile-img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 1px solid rgb(0, 0, 0);
+    }
+}
+
+.camera {
+    width: 25px;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 7px;
+    left: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-texts{
+    p{
+        font-size: 0.8em;
+    }
+
+    h3{
+        font-size: 1.4em;
+       font-weight: 400; 
+    }
+}
+
+.bx-chevron-right{
+    scale: 3 !important;
 }
