@@ -24,6 +24,7 @@ h2{
 input, select{
     width: 100%;
     border-radius: 5px;
+    border-width: thin;
 }
 
 label{
@@ -42,19 +43,19 @@ label{
     gap: 30px;
 }
 
-a{
-    display: flex;
-    text-decoration: underline;
-    color: #05466C;
-    text-align: center;
-
-}
 
 .forget-password{
     display: flex;
     text-align: center;
-    justify-content: center;
-    
+    margin: auto;
+    color: #05466C;
+}
+
+a{
+    color: #05466C;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
 }
 
 .buttons{
@@ -93,12 +94,12 @@ a{
 }
 
 .bxs-lock-alt, .bxs-trash{
-    scale: 1.2 !important;
-    text-decoration: none;
+    scale: 1.1 !important;
     
 }
 
 h2, h3{
     font-weight: normal;
+    
 }
 
