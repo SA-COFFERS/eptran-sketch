@@ -10,7 +10,7 @@ main{
     padding-top: 100px;
 
     section{
-        padding: 30px 0;
+        padding: 35px 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     }
 }
@@ -23,6 +23,7 @@ main{
     display: flex;
     justify-content: center;
     gap: 30px;
+    padding-bottom: 40px;
 }
 
 .name-n-email{
@@ -62,8 +63,12 @@ main{
 .options{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: flex-start;
+    gap: 30px;
+
+    .bx{
+        padding-left: 12px;
+    }
 }
 
 .section-texts{
@@ -78,5 +83,7 @@ main{
 }
 
 .bx-chevron-right{
+    position: absolute;
+    right: 30px;
     scale: 3 !important;
 }
